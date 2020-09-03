@@ -1,0 +1,8 @@
+Array.prototype.removeDuplicates = function() {
+ 	return this.filter(function (value, index, self) { 
+    	return self.indexOf(value) === index;
+  	});
+}
+
+//use as
+youArray.removeDuplicates();
